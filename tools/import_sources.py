@@ -63,7 +63,7 @@ def main() -> int:
         print("没有成功导入任何站点；保留原文件不覆盖。", file=sys.stderr)
         return 1
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_FILE.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\\n",
+    OUTPUT_FILE.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\n",
                            encoding="utf-8")
     print(json.dumps({"output": str(OUTPUT_FILE), "sites": len(merged["sites"]),
                       "report": report}, ensure_ascii=False, indent=2))
