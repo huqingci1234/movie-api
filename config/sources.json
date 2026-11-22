@@ -1,7 +1,9 @@
 {
-  "name": "Movie API · 4K优先",
-  "sources": [],
-  "parses": [],
-  "flags": [],
-  "lives": []
+  "name": "Movie API · 公开配置聚合",
+  "sources": [
+    {
+      "name": "TVboxorg 公开接口汇总",
+      "url": "https://raw.githubusercontent.com/TVboxorg/TVBox/main/dist/official.json"
+    }
+  ]
 }
